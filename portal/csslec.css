@@ -1,0 +1,37 @@
+body{
+    background: linear-gradient(#e3e3e3 , #d6d6d6 ,#c4c4c4 , #b3b3b3 , #9a9b9c , #858585 , #636363 , #4f4f4f , #383838 , #292929 , #212121 , #161717 , #080808);
+}
+.navbar{
+    background: white;
+    box-shadow: 0px 0px 9px 0px #acadad;
+    text-align: center;
+}
+.navbar img{
+    float: left;
+}
+.navbar p{
+    float: left;
+    font-size: 25px;
+    color: #c1d8e8;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 1px;
+}
+
+.card-div .card-body p{
+    color: #2677b5;
+    font-size: 18px;
+    /* height: 60px; */
+    width: 100%;
+    background: linear-gradient(#e3f0fa,#cce7fc , #c4e5ff, #b6ddfc ,#99d1ff);
+    text-align: center;
+    padding-top: 6px;
+    font-weight:500;
+    border-radius: 6px;
+    border: 1px solid #51abf5;
+    text-decoration: none;
+}
+.vid-div video{
+    margin-top: -37px;
+    width: 100%;
+}
