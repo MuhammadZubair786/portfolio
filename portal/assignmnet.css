@@ -1,0 +1,41 @@
+.navbar{
+    background: white;
+    box-shadow: 0px 0px 9px 0px #acadad;
+    text-align: center;
+}
+.navbar img{
+    float: left;
+}
+.navbar p{
+    float: left;
+    font-size: 25px;
+    color: #c1d8e8;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 1px;
+}
+.heading p{
+    color: #2677b5;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 5px;
+    /* margin-left: 10px; */
+    
+}
+.heading .pL{
+    font-size: 45px;
+    font-weight: 600;
+    color: #2677b5;
+}
+.heading .ps{
+    font-size: 27px;
+    color: #2677b5;
+    font-weight: 600;
+}
+
+.card-body{
+ display: inline-block ;
+    color: #2677b5;
+    font-size: 25px;
+    line-height: 42px;
+}
