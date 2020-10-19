@@ -1,5 +1,8 @@
 console.log('shkjsjs')
 
+
+ 
+
 // portfolio items filter
 
 // const filterContainer = document.querySelector(".portfolio-filter")
@@ -108,6 +111,64 @@ function showSection(element){
       for(let i=0; i<totalSection; i++){
         allSection[i].classList.toggle("open");
       }
+    }
+
+
+    function myfun(){
+        var savedata='';
+       var Name=document.getElementById('name').value;
+       var Email=document.getElementById('email').value;
+       var Subject=document.getElementById('subject').value;
+       var Message=document.getElementById("message").value;
+       if(Name==''){
+           alert("Please Enter Your Name ");
+       }
+       else if(Email==''){
+           alert("Please Enter Your Email");
+       }
+       else if(Subject==''){
+           alert("Please Enter Subject")
+       }
+       else if(Message==''){
+           alert("Please Enter Message")
+       }
+       else{
+           console.log('Name : ',Name);
+           console.log("Email : ",Email);
+           console.log("Subject : ",Subject);
+           console.log("Message : ",Message);
+           document.getElementById('name').value='';
+           document.getElementById('email').value='';
+           document.getElementById('subject').value='';
+           document.getElementById('message').value='';
+
+            console.log(firebase.database())
+
+            var key=Math.random()*1000
+                console.log(key)
+                key=key.toFixed()
+                var con_data={
+                username : Name,
+                Email : Email,
+                Subject : Subject,
+                Message : Message,
+                key:key,
+                }
+    firebase.database().ref('Contact_us/' + key).set(con_data)
+    console.log("KEY :",con_data.key)
+    savedata ="send";
+    if(savedata == 'send'){
+        alert("YOUR DATA SEND TO ADMIN");
+    }
+    else{
+        alert("PLEASE SORRY YOUR DATA NOT SEND TO ADMIN");
+
+    }
+
+
+       }
+    
+       
     }
 
     

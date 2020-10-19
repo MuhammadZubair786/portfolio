@@ -11,6 +11,28 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-database.js"></script>
+
+<script>
+        
+var firebaseConfig = {
+    apiKey: "AIzaSyCGnEX7XXO3YNnO1-8e_xSYyqdVKS9vK7I",
+    authDomain: "my-portfilo-d78b3.firebaseapp.com",
+    databaseURL: "https://my-portfilo-d78b3.firebaseio.com",
+    projectId: "my-portfilo-d78b3",
+    storageBucket: "my-portfilo-d78b3.appspot.com",
+    messagingSenderId: "831200607449",
+    appId: "1:831200607449:web:174553a159a2b00412d2c8",
+    measurementId: "G-LNS71GWGKT"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+</script>
+
+
 
     <!-- live style switcher  -->
     <link rel="stylesheet" class="alternate-style" title="pink" href="pink/pink.css">
@@ -19,10 +41,9 @@
     <link rel="stylesheet" class="alternate-style" title="yellow" href="pink/yellow.css" disabled>
     <link rel="stylesheet" class="alternate-style" title="green" href="pink/green.css" disabled>
     <link rel="stylesheet" href="pink/styleswitcher.css">
-    <link rel = "icon" href =  "new1.png" 
-        type = "image/x-icon">
+    <link rel="icon" href="Img/new1.png" type="image/x-icon">
 
-    
+
 
 </head>
 
@@ -45,7 +66,8 @@
                 <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
                 <li><a href="#services"><i class="fa fa-list"></i>Services</a></li>
                 <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
-                <!-- <li><a href="#blog"><i class="fa fa-envelope"></i>Blog</a></li> -->
+
+                <!-- <li><a href="#certificate"><i class="fa fa-envelope"></i>Certificate</a></li> -->
                 <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
 
             </ul>
@@ -69,7 +91,8 @@
                         <p>I'm a Full Stack Developer</p>
                         <div class="social-link">
                             <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="https://web.facebook.com/profile.php?id=100010093773879" target="_blanks"><i class="fa fa-facebook"></i></a>
+                            <a href="https://web.facebook.com/profile.php?id=100010093773879" target="_blanks"><i
+                                    class="fa fa-facebook"></i></a>
                             <a href="#"><i class="fa fa-instagram"></i></a>
                             <a href="#"><i class="fa fa-linkedin"></i></a>
 
@@ -268,13 +291,13 @@
                         <!-- service item  -->
                         <div class="service-item">
                             <div class="service-item-inner">
-                                    <center><img src="Img/wb.PNG"
-                                            style="margin-left: auto;margin-right: auto;border-radius: 100px;border: 5px solid;border-color: blue;">
-    
-                                        <h3 style="color:red"><br>WEB DEVELOPMENT</h3>
-                                    </center>
+                                <center><img src="Img/wb.PNG"
+                                        style="margin-left: auto;margin-right: auto;border-radius: 100px;border: 5px solid;border-color: blue;">
+
+                                    <h3 style="color:red"><br>WEB DEVELOPMENT</h3>
+                                </center>
                             </div>
-                            
+
                         </div>
                         <!-- service item end -->
 
@@ -286,7 +309,7 @@
 
                                     <h3 style="color:red"><br>Graphics Designer</h3>
                                 </center>
-                        </div>
+                            </div>
                         </div>
                         <!-- service item end -->
 
@@ -336,26 +359,30 @@
                         </div>
                     </div>
                 -->
+
+
                     <div class="row">
 
+
                         <!-- portfolio item  -->
-                        <div class="portfolio-item" data-category="web-design">
+                        <div class="portfolio-item" data-category="wordpress">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
-                                    <img src="Img/clocks-suits-men-time-wallpaper-preview.jpg" alt="">
+                                    <img src="Img/chat.jpg" alt="" style="width: 100%;height:210px;">
                                 </div>
                                 <div class="portfolio-info">
-                                    <h4>Age Converter</h4>
+                                    <h4>Chat App Using Js</h4>
                                     <div class="icon">
-                                        <a href="https://age-calculator-24a4e.web.app/"><i
+                                        <a href="https://resutrant-website.web.app/" target="_blanks"><i
                                                 class="fa fa-eye"></i></a>
                                     </div>
                                     <div class="portfolio-date">22 july 2020</div>
-
                                 </div>
                             </div>
                         </div>
                         <!-- portfolio item  end-->
+
+
 
 
                         <!-- portfolio item  -->
@@ -365,9 +392,9 @@
                                     <img src="Img/fastfood.jpg" alt="">
                                 </div>
                                 <div class="portfolio-info">
-                                    <h4>Resturant  Website</h4>
+                                    <h4>Resturant Website</h4>
                                     <div class="icon">
-                                        <a href="https://resutrant-website.web.app/"><i
+                                        <a href="https://resutrant-website.web.app/" target="_blanks"><i
                                                 class="fa fa-eye"></i></a>
                                     </div>
                                     <div class="portfolio-date">22 july 2020</div>
@@ -376,43 +403,6 @@
                         </div>
                         <!-- portfolio item  end-->
 
-
-                        <!-- portfolio item  -->
-                        <div class="portfolio-item" data-category="app-development">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="Img/images (3).jpg" alt="">
-                                </div>
-                                <div class="portfolio-info">
-                                    <h4>Calculator</h4>
-                                    <div class="icon">
-                                        <a href="https://muhammadzubair786.github.io/new-calculator/"> <i
-                                                class="fa fa-eye"></i></a>
-                                    </div>
-                                    <div class="portfolio-date">22 july 2020</div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- portfolio item  end-->
-
-
-                        <!-- portfolio item  -->
-                        <div class="portfolio-item" data-category="web-design">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="Img/istockphoto-644238384-612x612.jpg" alt="">
-                                </div>
-                                <div class="portfolio-info">
-                                    <h4>StopWatch</h4>
-                                    <div class="icon">
-                                        <a href="https://muhammadzubair786.github.io/Stop-Watch/"><i
-                                                class="fa fa-eye"></i></a>
-                                    </div>
-                                    <div class="portfolio-date">22 july 2020</div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- portfolio item  end-->
 
 
                         <!-- portfolio item  -->
@@ -424,84 +414,8 @@
                                 <div class="portfolio-info">
                                     <h4>Apple Website</h4>
                                     <div class="icon">
-                                        <a href="https://apple-website-38458.web.app/index.html"><i
+                                        <a href="https://apple-website-38458.web.app/index.html" target="_blanks"><i
                                                 class="fa fa-eye"></i></a>
-                                    </div>
-                                    <div class="portfolio-date">22 july 2020</div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- portfolio item  end-->
-
-
-                        <!-- portfolio item  -->
-                        <div class="portfolio-item" data-category="app-development">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="Img/blub.jpg" alt="" height="210px">
-                                </div>
-                                <div class="portfolio-info">
-                                    <h4>Blub Project</h4>
-                                    <div class="icon">
-                                        <a href="https://muhammadzubair786.github.io/BLUB_PROJECT_JS/"><i
-                                                class="fa fa-eye"></i></a>
-                                    </div>
-                                    <div class="portfolio-date">22 july 2020</div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- portfolio item  end-->
-
-                          <!-- portfolio item  -->
-                          <div class="portfolio-item " data-category="app-development">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="Img/images (1).jpg" alt="" height="210px">
-                                </div>
-                                <div class="portfolio-info">
-                                    <h4> Note Website </h4>
-                                    <div class="icon">
-                                    <a href="https://muhammadzubair786.github.io/notes-website/"><i
-                                                class="fa fa-eye"></i></a>
-                                    </div>
-                                    <div class="portfolio-date">22 july 2020</div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- portfolio item  end-->
-
-                        <!-- portfolio item  -->
-                        <div class="portfolio-item" data-category="app-development">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="Img/bitcoin.jpg" alt="" height="210px">
-                                </div>
-                                <div class="portfolio-info">
-                                    <h4>Bitcoin Website</h4>
-                                    <div class="icon">
-                                    <a href="https://bitcoin-website.web.app/"><i
-                                                class="fa fa-eye"></i></a>
-                                    </div>
-                                    <div class="portfolio-date">22 july 2020</div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- portfolio item  end-->
-
-
-                      
-
-
-                        <!-- portfolio item  -->
-                        <div class="portfolio-item" data-category="app-development">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="Img/s6YimV.jpg" alt="">
-                                </div>
-                                <div class="portfolio-info">
-                                    <h4>Portal</h4>
-                                    <div class="icon">
-                                        <a href="./portal/index.html"><i class="fa fa-eye"></i></a>
                                     </div>
                                     <div class="portfolio-date">22 july 2020</div>
                                 </div>
@@ -515,13 +429,12 @@
                         <div class="portfolio-item" data-category="app-development">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
-                                    <img src="Img/postit-scrabble-to-do-todo.jpg" alt="">
+                                    <img src="Img/s6YimV.jpg" alt="">
                                 </div>
                                 <div class="portfolio-info">
-                                    <h4>Todo Application with firebase database</h4>
+                                    <h4>Portal</h4>
                                     <div class="icon">
-                                        <a href="https://todo-app-c36fb.web.app/"><i
-                                                class="fa fa-eye"></i></a>
+                                        <a href="./portal/index.html" target="_blanks"><i class="fa fa-eye"></i></a>
                                     </div>
                                     <div class="portfolio-date">22 july 2020</div>
                                 </div>
@@ -540,7 +453,7 @@
                                 <div class="portfolio-info">
                                     <h4>Quiz Application</h4>
                                     <div class="icon">
-                                        <a href="https://quiz-app-ef299.web.app/"><i
+                                        <a href="https://quiz-app-ef299.web.app/" target="_blanks"><i
                                                 class="fa fa-eye"></i></a>
                                     </div>
                                     <div class="portfolio-date">22 july 2020</div>
@@ -548,6 +461,162 @@
                             </div>
                         </div>
                         <!-- portfolio item  end-->
+
+
+
+                        <!-- portfolio item  -->
+                        <div class="portfolio-item " data-category="app-development">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="Img/images (1).jpg" alt="" height="210px">
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4> Note Website </h4>
+                                    <div class="icon">
+                                        <a href="https://muhammadzubair786.github.io/notes-website/" target="_blanks"><i
+                                                class="fa fa-eye"></i></a>
+                                    </div>
+                                    <div class="portfolio-date">22 july 2020</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- portfolio item  end-->
+
+
+
+                        <!-- portfolio item  -->
+                        <div class="portfolio-item" data-category="app-development">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="Img/postit-scrabble-to-do-todo.jpg" alt="">
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Todo Application with firebase database</h4>
+                                    <div class="icon">
+                                        <a href="https://todo-app-c36fb.web.app/" target="_blanks"><i
+                                                class="fa fa-eye"></i></a>
+                                    </div>
+                                    <div class="portfolio-date">22 july 2020</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- portfolio item  end-->
+
+
+
+
+
+
+
+
+
+
+                        <!-- portfolio item  -->
+                        <div class="portfolio-item" data-category="app-development">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="Img/images (3).jpg" alt="">
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Calculator</h4>
+                                    <div class="icon">
+                                        <a href="https://muhammadzubair786.github.io/new-calculator/" target="_blanks">
+                                            <i class="fa fa-eye"></i></a>
+                                    </div>
+                                    <div class="portfolio-date">22 july 2020</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- portfolio item  end-->
+
+
+                        <!-- portfolio item  -->
+                        <div class="portfolio-item" data-category="web-design">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="Img/istockphoto-644238384-612x612.jpg" alt="">
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>StopWatch</h4>
+                                    <div class="icon">
+                                        <a href="https://muhammadzubair786.github.io/Stop-Watch/" target="_blanks"><i
+                                                class="fa fa-eye"></i></a>
+                                    </div>
+                                    <div class="portfolio-date">22 july 2020</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- portfolio item  end-->
+
+
+
+
+                        <!-- portfolio item  -->
+                        <div class="portfolio-item" data-category="web-design">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="Img/clocks-suits-men-time-wallpaper-preview.jpg" alt="">
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Age Converter</h4>
+                                    <div class="icon">
+                                        <a href="https://age-calculator-24a4e.web.app/" target="_blanks"><i
+                                                class="fa fa-eye"></i></a>
+                                    </div>
+                                    <div class="portfolio-date">22 july 2020</div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- portfolio item  end -->
+
+
+                        <!-- portfolio item  -->
+                        <div class="portfolio-item" data-category="app-development">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="Img/blub.jpg" alt="" height="210px">
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Blub Project</h4>
+                                    <div class="icon">
+                                        <a href="https://muhammadzubair786.github.io/BLUB_PROJECT_JS/"
+                                            target="_blanks"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                    <div class="portfolio-date">22 july 2020</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- portfolio item  end-->
+
+
+
+                        <!-- portfolio item  -->
+                        <div class="portfolio-item" data-category="app-development">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="Img/bitcoin.jpg" alt="" height="210px">
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Bitcoin Website</h4>
+                                    <div class="icon">
+                                        <a href="https://bitcoin-website.web.app/" target="_blanks"><i
+                                                class="fa fa-eye"></i></a>
+                                    </div>
+                                    <div class="portfolio-date">22 july 2020</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- portfolio item  end-->
+
+
+
+
+
+
+
+
+
 
 
                         <!----
@@ -607,76 +676,27 @@
                 </div>
             </section>
             <!-- portfolio section end  -->
-            <!----
-            blog section 
-            <section class="blog section" id="blog">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title">
-                            <h2>Latest blog</h2>
-                        </div>
+
+            <!-- blog section  -->
+          <!-- <section class="section" id="certificate">
+              <div class="container">
+                  <div class="row">
+                    <div class="section-title">
+                        <h2>Certifications</h2>
                     </div>
-                    <div class="row">
-                        blog item 
-                        <div class="blog-item">
-                            <div class="blog-item-inner shadow-dark">
-                                <div class="blog-img">
-                                    <img src="./1.png" alt="">
-                                    <div class="blog-date">
-                                        4 june 2020
-                                    </div>
-                                </div>
-                                <div class="blog-info">
-                                    <h4 class="blog-title">responsive web design</h4>
-                                    <p class="blog-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    </p>
-                                    <p class="blog-tags">Tags : <a href="#">Html</a> , <a href="#">JavaScript</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        blog item end 
+                  </div>
+                  <div class="row">
+                      <div class="col">
+                       <img src="Img/SoloHtml.PNG" width="300px">
+                      </div>
 
-                        blog item 
-                        <div class="blog-item">
-                            <div class="blog-item-inner shadow-dark">
-                                <div class="blog-img">
-                                    <img src="./2.png" alt="">
-                                    <div class="blog-date">
-                                        5 june 2020
-                                    </div>
-                                </div>
-                                <div class="blog-info">
-                                    <h4 class="blog-title">create slide show</h4>
-                                    <p class="blog-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    </p>
-                                    <p class="blog-tags">Tags : <a href="#">Html</a> , <a href="#">JavaScript</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        blog item end 
+                      <div class="col">
+                        <img src="Img/Html.PNG" width="300px">
+                       </div>
+                  </div>
+              </div>
 
-                        blog item 
-                        <div class="blog-item">
-                            <div class="blog-item-inner shadow-dark">
-                                <div class="blog-img">
-                                    <img src="./3.png" alt="">
-                                    <div class="blog-date">
-                                        4 june 2020
-                                    </div>
-                                </div>
-                                <div class="blog-info">
-                                    <h4 class="blog-title">responsive web design</h4>
-                                    <p class="blog-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    </p>
-                                    <p class="blog-tags">Tags : <a href="#">Html</a> , <a href="#">JavaScript</a></p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section> -->
-            <!-- blog section end  -->
+          </section> -->
 
             <!-- contact section  -->
             <section class="contact section" id="contact">
@@ -717,13 +737,13 @@
                             <div class="row">
                                 <div class="form-item col-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Name">
+                                        <input type="text" class="form-control" placeholder="Name" required id='name'>
                                     </div>
                                 </div>
 
                                 <div class="form-item col-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Email">
+                                        <input type="email" class="form-control" placeholder="Email" required id='email'>
                                     </div>
                                 </div>
 
@@ -731,7 +751,7 @@
                             <div class="row">
                                 <div class="form-item col-12">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Subject">
+                                        <input type="text" class="form-control" placeholder="Subject" required id='subject'>
                                     </div>
                                 </div>
                             </div>
@@ -739,14 +759,14 @@
                             <div class="row">
                                 <div class="form-item col-12">
                                     <div class="form-group">
-                                        <textarea class="form-control" placeholder="Message"></textarea>
+                                        <textarea class="form-control" placeholder="Message" id='message'></textarea>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="row">
                                 <div class="col-12">
-                                    <button type="submit" class="btn">Send Message</button>
+                                    <button type="submit" class="btn" onclick="myfun()">Send Message</button>
                                 </div>
                             </div>
 
@@ -815,9 +835,17 @@
 
 </body>
 
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
 <script src="app.js"></script>
 
 <script src="styleSwitcher.js"></script>
+
+
+
+
 
 
 </html>
